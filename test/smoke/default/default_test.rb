@@ -5,14 +5,10 @@
 # The Inspec reference, with examples and extensive documentation, can be
 # found at http://inspec.io/docs/reference/resources/
 
-unless os.windows?
-  describe user('root') do
-    it { should exist }
-    skip 'This is an example test, replace with your own test.'
-  end
-end
+script = <<-EOH
+  java -version
+EOH
 
-describe port(80) do
-  it { should_not be_listening }
-  skip 'This is an example test, replace with your own test.'
+describe powershell(script) do
+  its('stderr') { should match ".*java version \"1.8.0_51\".*" }
 end
