@@ -4,7 +4,7 @@ maintainer_email 'you@example.com'
 license 'all_rights'
 description 'Installs/Configures java-oracle'
 long_description 'Installs/Configures java-oracle'
-version '0.1.0'
+version '0.1.1'
 
 depends 'java', '~> 1.47.0'
 
