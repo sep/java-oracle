@@ -10,5 +10,5 @@ script = <<-EOH
 EOH
 
 describe powershell(script) do
-  its('stderr') { should match ".*java version \"1.8.0_51\".*" }
+  its('stderr') { should match '.*java version \"1.8.0_51\".*' }
 end
