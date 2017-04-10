@@ -21,7 +21,9 @@ transport:
   name: winrm
 
 platforms:
-  - name: win10
+  - name: Windows-10
+    driver:
+      box: OC_Win10
     os_type: windows
     shell_type: powershell
 
