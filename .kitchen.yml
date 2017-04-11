@@ -1,8 +1,6 @@
 ---
 driver:
   name: vagrant
-  synced_folders:
-    - ["C:/Installers", "c:/Installers"]
 
 provisioner:
   name: chef_zero
